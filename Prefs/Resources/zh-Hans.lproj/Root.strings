@@ -1,0 +1,8 @@
+"ENABLE" = "启用 LookInside";
+"ENABLE_FOOTER" = "关闭后，所有 App 都不会加载 LookInside Server。";
+"CHOOSE_APPS" = "选择 App";
+"APPS_FOOTER" = "已开启的 App 会在下次启动时加载 LookInside Server。";
+"ABOUT" = "关于";
+"ABOUT_FOOTER" = "用 USB 数据线把这台设备连接到 Mac，然后在 Mac 上打开 LookInside。已在这里开启并且正在运行的 App 会显示在 LookInside 里。";
+"WEBSITE" = "官网";
+"VERSION" = "版本";

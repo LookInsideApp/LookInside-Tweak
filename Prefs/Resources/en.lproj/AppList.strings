@@ -1,0 +1,4 @@
+"TITLE" = "Choose Apps";
+"USER_APPS" = "Apps";
+"SYSTEM_APPS" = "System Apps";
+"RELAUNCH_FOOTER" = "Changes take effect the next time the app launches. Quit an app that is already running and open it again.";

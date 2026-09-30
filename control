@@ -1,0 +1,10 @@
+Package: app.lookinside.tweak
+Name: LookInsideTweak
+Version: 0.1.0
+Architecture: iphoneos-arm
+Description: Load LookInside Server into the apps you choose, so LookInside on your Mac can inspect them over USB.
+Maintainer: LookInside
+Author: LookInside
+Homepage: https://lookinside-app.com
+Section: Tweaks
+Depends: mobilesubstrate, preferenceloader, firmware (>= 15.0)
