@@ -1,0 +1,8 @@
+"ENABLE" = "Включить LookInside";
+"ENABLE_FOOTER" = "Когда выключено, ни одно приложение не загружает LookInside Server.";
+"CHOOSE_APPS" = "Выбор приложений";
+"APPS_FOOTER" = "Включённые приложения загрузят LookInside Server при следующем запуске.";
+"ABOUT" = "О программе";
+"ABOUT_FOOTER" = "Подключите это устройство к Mac кабелем USB и откройте LookInside на Mac. Включённые здесь запущенные приложения появятся в LookInside.";
+"WEBSITE" = "Веб-сайт";
+"VERSION" = "Версия";

@@ -1,0 +1,8 @@
+"ENABLE" = "LookInsideを有効にする";
+"ENABLE_FOOTER" = "オフにすると、どのAppもLookInside Serverを読み込みません。";
+"CHOOSE_APPS" = "Appを選択";
+"APPS_FOOTER" = "オンにしたAppは、次回の起動時にLookInside Serverを読み込みます。";
+"ABOUT" = "情報";
+"ABOUT_FOOTER" = "このデバイスをUSBケーブルでMacに接続し、MacでLookInsideを開いてください。ここでオンにして実行中のAppが、LookInsideに表示されます。";
+"WEBSITE" = "Webサイト";
+"VERSION" = "バージョン";

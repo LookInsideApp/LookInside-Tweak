@@ -1,0 +1,4 @@
+"TITLE" = "Appを選択";
+"USER_APPS" = "App";
+"SYSTEM_APPS" = "システムApp";
+"RELAUNCH_FOOTER" = "変更は、次にAppを起動したときに反映されます。すでに実行中のAppは、終了してからもう一度開いてください。";

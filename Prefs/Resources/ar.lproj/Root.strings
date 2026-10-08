@@ -1,0 +1,8 @@
+"ENABLE" = "تمكين LookInside";
+"ENABLE_FOOTER" = "عند الإيقاف، لا يحمّل أي تطبيق LookInside Server.";
+"CHOOSE_APPS" = "اختيار التطبيقات";
+"APPS_FOOTER" = "تحمّل التطبيقات التي تفعّلها LookInside Server في المرة التالية التي تُشغَّل فيها.";
+"ABOUT" = "حول";
+"ABOUT_FOOTER" = "وصّل هذا الجهاز بالـ Mac عبر كبل USB وافتح LookInside على الـ Mac. تظهر في LookInside التطبيقات المفعّلة هنا والتي تعمل حاليًا.";
+"WEBSITE" = "الموقع الإلكتروني";
+"VERSION" = "الإصدار";

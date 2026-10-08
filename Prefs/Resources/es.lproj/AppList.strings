@@ -1,0 +1,4 @@
+"TITLE" = "Elegir apps";
+"USER_APPS" = "Apps";
+"SYSTEM_APPS" = "Apps del sistema";
+"RELAUNCH_FOOTER" = "Los cambios se aplican la próxima vez que se abra la app. Cierra una app que ya esté en ejecución y ábrela de nuevo.";

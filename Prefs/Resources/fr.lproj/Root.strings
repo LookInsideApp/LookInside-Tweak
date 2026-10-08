@@ -1,0 +1,8 @@
+"ENABLE" = "Activer LookInside";
+"ENABLE_FOOTER" = "Si cette option est désactivée, aucune app ne charge LookInside Server.";
+"CHOOSE_APPS" = "Choisir des apps";
+"APPS_FOOTER" = "Les apps que vous activez chargent LookInside Server à leur prochain lancement.";
+"ABOUT" = "À propos";
+"ABOUT_FOOTER" = "Connectez cet appareil à votre Mac avec un câble USB et ouvrez LookInside sur le Mac. Les apps activées ici et en cours d’exécution apparaissent dans LookInside.";
+"WEBSITE" = "Site web";
+"VERSION" = "Version";

@@ -1,0 +1,4 @@
+"TITLE" = "選擇 App";
+"USER_APPS" = "App";
+"SYSTEM_APPS" = "系統 App";
+"RELAUNCH_FOOTER" = "變更會在 App 下次啟動時生效。已在執行的 App 需要先結束再重新開啟。";

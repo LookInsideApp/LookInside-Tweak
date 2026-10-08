@@ -1,0 +1,8 @@
+"ENABLE" = "LookInside 켜기";
+"ENABLE_FOOTER" = "끄면 어떤 앱도 LookInside Server를 불러오지 않습니다.";
+"CHOOSE_APPS" = "앱 선택";
+"APPS_FOOTER" = "켜 놓은 앱은 다음에 실행할 때 LookInside Server를 불러옵니다.";
+"ABOUT" = "정보";
+"ABOUT_FOOTER" = "USB 케이블로 이 기기를 Mac에 연결하고 Mac에서 LookInside를 여세요. 여기서 켜져 있고 실행 중인 앱이 LookInside에 나타납니다.";
+"WEBSITE" = "웹사이트";
+"VERSION" = "버전";
