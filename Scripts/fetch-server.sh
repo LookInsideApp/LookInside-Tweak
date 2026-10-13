@@ -13,8 +13,11 @@
 #   SERVER_XCFRAMEWORK  local LookInsideServer.xcframework to use
 #   SERVER_VERSION      release tag to download (default: latest)
 #
-# System apps such as SpringBoard and Settings are arm64e processes and can
-# only load a Server that has an arm64e slice. Third-party apps load arm64.
+# System apps such as SpringBoard, Settings and Music are arm64e processes
+# and can only load a Server that has an arm64e slice. Third-party apps load
+# arm64. LookInside-Release 1.0.1 and later ship both slices; 1.0.0 and older
+# are arm64 only, so pin SERVER_VERSION to 1.0.1 or newer, or pass a local
+# build made with IPHONEOS_ARCHS="arm64 arm64e", if you need system apps.
 
 set -euo pipefail
 
@@ -65,5 +68,5 @@ archs="$(lipo -archs "$DESTINATION/LookInsideServer")"
 echo "==> Server architectures: $archs"
 case " $archs " in
 *" arm64e "*) ;;
-*) echo "warning: no arm64e slice, so system apps cannot load this Server" >&2 ;;
+*) echo "warning: no arm64e slice, so system apps cannot load this Server (use LookInside-Release 1.0.1 or later, or a local build with IPHONEOS_ARCHS=\"arm64 arm64e\")" >&2 ;;
 esac
