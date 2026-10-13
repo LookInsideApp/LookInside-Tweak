@@ -14,14 +14,12 @@ Website: [lookinside-app.com](https://lookinside-app.com)
 
 ## Install
 
-Download the package that matches your jailbreak from the latest release:
+There are no prebuilt packages yet. Build the `.deb` for your jailbreak from source (see below), install it with your package manager or with `dpkg -i`, then respring.
 
 | Jailbreak | Package |
 | --- | --- |
 | Rootless | `app.lookinside.tweak_<version>_iphoneos-arm64.deb` |
 | roothide | `app.lookinside.tweak_<version>_iphoneos-arm64e.deb` |
-
-Install it with your package manager or with `dpkg -i`, then respring.
 
 ## Use
 
@@ -52,7 +50,7 @@ To use a local build of the server, pass its path:
 SERVER_XCFRAMEWORK=/path/to/LookInsideServer.xcframework make server
 ```
 
-System apps such as SpringBoard and Settings run as arm64e and load the server only if it has an arm64e slice. Third-party apps load the arm64 slice.
+System apps such as SpringBoard, Settings and Music run as arm64e and load the server only if it has an arm64e slice. Third-party apps load the arm64 slice. `LookInsideServer.xcframework` from LookInside-Release 1.0.1 or later ships both slices; 1.0.0 and older are arm64 only, so with those releases system apps are skipped. `make server` warns when the server it installed has no arm64e slice.
 
 ## License
 
