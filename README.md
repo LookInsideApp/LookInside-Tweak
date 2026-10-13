@@ -55,3 +55,7 @@ System apps such as SpringBoard, Settings and Music run as arm64e and load the s
 ## License
 
 MIT. See [LICENSE](LICENSE).
+
+## Sponsor
+
+This project is sponsored by [AirBuild](https://air.build/).
