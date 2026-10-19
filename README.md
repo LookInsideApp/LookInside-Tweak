@@ -14,12 +14,14 @@ Website: [lookinside-app.com](https://lookinside-app.com)
 
 ## Install
 
-Download the package for your jailbreak from [Releases](https://github.com/LookInsideApp/LookInside-Tweak/releases/latest) and install it with your preferred package manager, or with `dpkg -i`.
+Add the OwnGoal Studio repository `https://apt.owngoal.dev/` in your preferred package manager and install **LookInsideTweak**; it picks the right package for your jailbreak.
 
-| Jailbreak | Package |
-| --- | --- |
-| Rootless | `app.lookinside.tweak_<version>_iphoneos-arm64.deb` |
-| roothide | `app.lookinside.tweak_<version>_iphoneos-arm64e.deb` |
+Or download the package for your jailbreak from [Releases](https://github.com/LookInsideApp/LookInside-Tweak/releases/latest) and install it with your preferred package manager, or with `dpkg -i`.
+
+| Jailbreak | Package                                              |
+| --------- | ---------------------------------------------------- |
+| Rootless  | `app.lookinside.tweak_<version>_iphoneos-arm64.deb`  |
+| roothide  | `app.lookinside.tweak_<version>_iphoneos-arm64e.deb` |
 
 Not sure which one? Run `dpkg --print-architecture` on the device. Check your download against `SHA256SUMS` on the release page.
 

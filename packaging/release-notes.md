@@ -4,14 +4,14 @@ LookInsideTweak loads LookInside Server into the iOS apps you choose, so LookIns
 
 The architecture field names the **bootstrap layout, not the CPU**.
 
-| your bootstrap | download |
-| -------------- | -------- |
-| roothide | `@PACKAGE_ID@_@VERSION@_iphoneos-arm64e.deb` |
-| rootless | `@PACKAGE_ID@_@VERSION@_iphoneos-arm64.deb` |
+| your bootstrap | download                                     |
+| -------------- | -------------------------------------------- |
+| roothide       | `@PACKAGE_ID@_@VERSION@_iphoneos-arm64e.deb` |
+| rootless       | `@PACKAGE_ID@_@VERSION@_iphoneos-arm64.deb`  |
 
 Not sure? Ask the device: `dpkg --print-architecture`.
 
-Requires **iOS @MIN_IOS@ or later**, an injector that provides `mobilesubstrate` (such as ElleKit), and PreferenceLoader.
+Requires **iOS @MIN_IOS@ or later**, an injector that provides `mobilesubstrate` (such as ElleKit), and PreferenceLoader. Or add the [OwnGoal Studio repository](https://apt.owngoal.dev/) and let your preferred package manager pick.
 
 ## What gets injected and restarted
 
