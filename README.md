@@ -14,12 +14,14 @@ Website: [lookinside-app.com](https://lookinside-app.com)
 
 ## Install
 
-There are no prebuilt packages yet. Build the `.deb` for your jailbreak from source (see below), install it with your package manager or with `dpkg -i`, then respring.
+Download the package for your jailbreak from [Releases](https://github.com/LookInsideApp/LookInside-Tweak/releases/latest) and install it with your preferred package manager, or with `dpkg -i`.
 
 | Jailbreak | Package |
 | --- | --- |
 | Rootless | `app.lookinside.tweak_<version>_iphoneos-arm64.deb` |
 | roothide | `app.lookinside.tweak_<version>_iphoneos-arm64e.deb` |
+
+Not sure which one? Run `dpkg --print-architecture` on the device. Check your download against `SHA256SUMS` on the release page.
 
 ## Use
 
@@ -28,29 +30,27 @@ There are no prebuilt packages yet. Build the `.deb` for your jailbreak from sou
 3. Quit those apps if they are running, then open them again. The change applies the next time an app launches.
 4. Connect the device to your Mac with a USB cable and open LookInside on the Mac.
 
-Settings appears in English or Simplified Chinese, following the system language.
+Settings follows the system language: English, Arabic, Chinese (Simplified and Traditional), French, German, Italian, Japanese, Korean, Portuguese (Brazil), Russian, Spanish and Vietnamese.
 
 Apps that already include a Lookin or LookInside server are skipped. On roothide, apps on the RootHide Manager blacklist load no tweaks, so remove an app from the blacklist before you turn it on here. Up to five apps can connect to LookInside at the same time.
 
+To stop loading LookInside Server in every app without uninstalling, turn off **Enable LookInside** in Settings, or create the file `/var/mobile/Library/app.lookinside.tweak/disabled` inside the jailbreak root (under `/var/jb` on rootless).
+
 ## Build from source
 
-You need [Theos](https://theos.dev) with rootless and roothide support (the [roothide Theos](https://github.com/roothide/theos) works) and `ldid`.
+The build uses the Xcode toolchain, not Theos. You need Xcode, `ldid`, `dpkg` and `zstd`, and bash 4 or later for the scripts. The Settings pane links the private Preferences framework, which the Xcode SDK leaves out, so you also need `iPhoneOS16.5.sdk` from [theos/sdks](https://github.com/theos/sdks) at the commit pinned in `configuration/build.env`; the build checks that it is that exact SDK.
 
 ```sh
-make server        # downloads LookInsideServer.xcframework from LookInside-Release
-make clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=rootless
-make clean package FINALPACKAGE=1 THEOS_PACKAGE_SCHEME=roothide
+PREFS_SDK=/path/to/iPhoneOS16.5.sdk make debs
 ```
 
-The packages are written to `packages/`.
+`make debs` writes both packages, their debug symbols and `SHA256SUMS` to `build/pkg/`. `make check` runs the static checks alone.
 
-To use a local build of the server, pass its path:
+The packages carry LookInside Server from [LookInside-Release](https://github.com/LookInsideApp/LookInside-Release); `configuration/server.env` pins its version and sha256, and the build downloads it. To try a local build of the server instead, pass its path:
 
 ```sh
-SERVER_XCFRAMEWORK=/path/to/LookInsideServer.xcframework make server
+SERVER_XCFRAMEWORK=/path/to/LookInsideServer.xcframework PREFS_SDK=/path/to/iPhoneOS16.5.sdk make debs
 ```
-
-System apps such as SpringBoard, Settings and Music run as arm64e and load the server only if it has an arm64e slice. Third-party apps load the arm64 slice. `LookInsideServer.xcframework` from LookInside-Release 1.0.1 or later ships both slices; 1.0.0 and older are arm64 only, so with those releases system apps are skipped. `make server` warns when the server it installed has no arm64e slice.
 
 ## License
 

@@ -1,0 +1,52 @@
+{
+  "class": "DepictionTabView",
+  "minVersion": "0.4",
+  "tintColor": "#E8A04C",
+  "tabs": [
+    {
+      "class": "DepictionStackView",
+      "tabname": "Details",
+      "views": [
+        {
+          "class": "DepictionSubheaderView",
+          "title": "Inspect Any App with LookInside",
+          "useBoldText": true
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Description"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionMarkdownView",
+          "markdown": "Pick apps in **Settings → LookInside**, open them, and inspect their views and layers with [LookInside](https://lookinside-app.com) on your Mac over USB. The apps need no changes and no re-signing.\n\n## How to use\n\n1. Open **Settings → LookInside** and make sure **Enable LookInside** is on.\n2. Tap **Choose Apps** and turn on the apps you want to inspect.\n3. Quit those apps if they are running, then open them again.\n4. Connect the device to your Mac with a USB cable and open LookInside on the Mac.\n\nApps that already include a Lookin or LookInside server are skipped. Up to five apps can connect to LookInside at the same time.\n\n## Compatibility\n\nRequires iOS 15 or later, a roothide or rootless bootstrap, an injector that provides `mobilesubstrate` (such as ElleKit), and PreferenceLoader. Choose `iphoneos-arm64e` for roothide or `iphoneos-arm64` for rootless. System apps and App Store apps both load the server. On roothide, an app on the jailbreak manager's blacklist loads no tweaks, so take it off the blacklist first.\n\n[View Source](https://github.com/LookInsideApp/LookInside-Tweak)",
+          "useSpacing": true
+        },
+        {
+          "class": "DepictionHeaderView",
+          "title": "Information"
+        },
+        {
+          "class": "DepictionSeparatorView"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "iOS Versions",
+          "text": "15 or later"
+        },
+        {
+          "class": "DepictionTableTextView",
+          "title": "Developer",
+          "text": "LookInside"
+        },
+        {
+          "class": "DepictionTableButtonView",
+          "title": "Website",
+          "action": "https://lookinside-app.com"
+        }
+      ]
+    }
+  ]
+}

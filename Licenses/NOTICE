@@ -1,0 +1,15 @@
+LookInsideTweak
+Copyright (c) 2026 LookInsideApp contributors
+
+This package is distributed under the MIT License.
+
+Third-party components:
+
+- LookInside Server (LookInsideApp/LookInside-Server, based on
+  QMUI/LookinServer), MIT License. Copyright (c) 2023 LI KAI (upstream
+  QMUI/LookinServer), Copyright (c) 2026 LookInsideApp contributors. Shipped as
+  Library/Frameworks/LookInsideServer.framework, unmodified except for its
+  install name and an ad-hoc re-signature.
+- roothide.h (RootHide/libroothide), MIT License. The roothide package of this
+  tweak links its own hand-written stub for libroothide and includes the
+  official MIT header at build time.

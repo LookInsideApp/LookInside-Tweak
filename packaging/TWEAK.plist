@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+    MobileSubstrate filter. Ships beside the dylib as LookInsideTweak.plist.
+    The user picks the apps in Settings at run time, so no fixed list fits
+    here: the filter names every UIKit process, and the constructor in
+    src/tweak.m returns at once unless the process is an app the user turned
+    on. package-deb.sh converts this to XML and sets mode 0644 before packing.
+-->
+<plist version="1.0">
+<dict>
+    <key>Filter</key>
+    <dict>
+        <key>Bundles</key>
+        <array>
+            <string>com.apple.UIKit</string>
+        </array>
+    </dict>
+</dict>
+</plist>

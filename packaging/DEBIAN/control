@@ -1,0 +1,16 @@
+Package: @PACKAGE_ID@
+Name: LookInsideTweak
+Version: @VERSION@
+Architecture: @ARCHITECTURE@
+Description: Load LookInside Server into the apps you choose, so LookInside on your Mac can inspect them over USB.
+ Pick apps in Settings, open them, and inspect their views and layers with LookInside on your Mac. The apps need no changes and no re-signing.
+Icon: https://lookinsideapp.github.io/LookInside-Tweak/icon.png
+Depiction: https://lookinsideapp.github.io/LookInside-Tweak/
+SileoDepiction: https://lookinsideapp.github.io/LookInside-Tweak/depiction.json
+Homepage: https://lookinside-app.com
+Maintainer: LookInside
+Author: LookInside <https://github.com/LookInsideApp/LookInside-Tweak>
+Section: Tweaks
+Priority: optional
+Depends: firmware (>= @MIN_IOS@)@DEPENDS@
+Installed-Size: @INSTALLED_SIZE@
